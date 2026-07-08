@@ -4,7 +4,7 @@ import heroImg from '../../../src/assets/Banner-min.jpg';
 const Hero = () => {
     return (
         <div>
-            <section className="relative h-[660px] bg-cover bg-center">
+            <section className="relative h-[350px] md:h-[500px] lg:h-[660px] overflow-hidden">
 
                 <div
                     className="absolute inset-0 bg-cover bg-center"

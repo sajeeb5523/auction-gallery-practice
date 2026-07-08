@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Digital Camera",
+        "description": "High-resolution DSLR camera, perfect for photography enthusiasts.",
+        "currentBidPrice": 150.00,
+        "timeLeft": "2h 30m",
+        "bidsCount": 8,
+        "image": "https://i.ibb.co.com/xPC4qZC/Bid1-min.png"
+    },
+    {
+        "id": 2,
+        "title": "Acoustic Guitar",
+        "description": "Classic wooden acoustic guitar with smooth sound and sleek finish.",
+        "currentBidPrice": 95.00,
+        "timeLeft": "4h 15m",
+        "bidsCount": 12,
+        "image": "https://i.ibb.co.com/Kj0rvRnC/Bid2-min.png"
+    },
+    {
+        "id": 3,
+        "title": "Gaming Laptop",
+        "description": "High-performance gaming laptop with latest GPU and fast processor.",
+        "currentBidPrice": 650.00,
+        "timeLeft": "1d 3h",
+        "bidsCount": 22,
+        "image": "https://i.ibb.co.com/TMynkwSp/Bid3-min.png"
+    },
+    {
+        "id": 4,
+        "title": "Luxury Watch",
+        "description": "Elegant men's watch with leather strap and waterproof build.",
+        "currentBidPrice": 120.00,
+        "timeLeft": "6h 50m",
+        "bidsCount": 17,
+        "image": "https://i.ibb.co.com/TD7M6bgL/Bid4-min.png"
+    },
+    {
+        "id": 5,
+        "title": "Ergonomic Chair",
+        "description": "Comfortable office chair with adjustable height and back support.",
+        "currentBidPrice": 75.00,
+        "timeLeft": "3h 5m",
+        "bidsCount": 10,
+        "image": "https://i.ibb.co.com/cKf2TNMD/Bid5-min.png"
+    },
+    {
+        "id": 6,
+        "title": "Programming Book",
+        "description": "Comprehensive guide to modern web development techniques.",
+        "currentBidPrice": 20.00,
+        "timeLeft": "5h 40m",
+        "bidsCount": 5,
+        "image": "https://i.ibb.co.com/8gXL9qDQ/Bid6-min.png"
+    }
+]
