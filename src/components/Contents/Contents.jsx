@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -36,7 +37,17 @@ const Contents = () => {
                 draggable: true,
             });
         }
-    }
+    };
+
+    const handleRemoveFavorite = (itemId) => {
+        const newFavorites = favorites.filter(fav => fav.id !== itemId);
+        setFavorites(newFavorites);
+
+        const newTotal = newFavorites.reduce((sum, fav) => sum + parseFloat(fav.currentBidPrice), 0);
+        setTotalAmount(newTotal);
+
+        toast.warning('Item Removed From Favorites!');
+    };
 
     return (
         <div className="max-w-7xl mx-auto py-10">
@@ -115,6 +126,12 @@ const Contents = () => {
                                     <div key={item.id} className='bg-gray-50 p-3 rounded-lg border border-gray-200'>
                                         <div className="flex justify-between items-start mb-2">
                                             <h3 className='font-medium text-sm text-left flex-1 text-gray-800'>{item.title}</h3>
+                                            <button
+                                                onClick={() => handleRemoveFavorite(item.id)}
+                                                className='text-red-500 hover:text-red-700 ml-2'
+                                            >
+                                                <MdClose size={18} />
+                                            </button>
                                         </div>
 
                                         <div className="text-left space-y-1">
